@@ -1,7 +1,9 @@
+api/ping.js
+api/chat.js
 {
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "name": "wix-chatbot-proxy",
+  "private": true,
+  "type": "module"
+}export function GET() {
+  return new Response("pong", { status: 200 });
 }
